@@ -10,7 +10,7 @@
 <h2>User Registration</h2>
     <form action="/home.php" method="post">
       
-        <label for="fname">First Name: </lebel>
+        <label for="fname">First Name: </label>
         <input tyoe="text" id="fname" name="fname" placeholder="give your first name"> <br><br>
         <label for="lname">Last Name : </label>
         <input type="text" id="lname" name="lname" placeholder="give your last name"><br><br>
@@ -38,7 +38,7 @@
             <option value="Rangpur">RANGPUR </option>
             <option value="Sylhet">SYLHET </option>
             <option value="Mymensingh">MYMENSINGH </option>
-</select> <br><br>
+        </select> <br><br>
             
      <label>Address: <textarea name="address" rows="3" placeholder="123st,10road,Dhaka"></textarea></label> <br><br>
 
