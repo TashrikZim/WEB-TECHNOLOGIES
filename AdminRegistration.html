@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aa</title>
+    <title>Admin Registration - Car Rental Management</title>
 </head>
 <body>
-    
+    <center>
+    <h2>Admin Registration</h2>
+    <form action="/admin_register.php" method="post">
+        <table>
+            <tr>
+                <td><label for="employee_id">Employee ID:</label></td>
+                <td><input type="number" id="employee_id" name="employee_id" required></td>
+            </tr>
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td>
+                    <select id="department" name="department">
+                        <option value="IT">IT</option>
+                        <option value="HR">Human Resources</option>
+                        <option value="Management">Management</option>
+                        <option value="Operations">Operations</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="position">Position:</label></td>
+                <td><input type="text" id="position" name="position" placeholder="Manager/sells man/officer"></td>
+            </tr>
+            <tr>
+                <td><label for="admin_code">Admin Code:</label></td>
+                <td><input type="password" id="admin_code" name="admin_code" required></td>
+            </tr>
+            <tr>
+                <td><label for="employment_date">Employment Date:</label></td>
+                <td><input type="date" id="employment_date" name="employment_date"></td>
+            </tr>
+            <tr>
+                <td><label for="security_question">Security Question:</label></td>
+                <td>
+                    <select id="security_question" name="security_question">
+                        <option value="pet">your pet's name?</option>
+                        <option value="school">your first school?</option>
+                        <option value="city">What city were you born in?</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="security_answer">Security Answer:</label></td>
+                <td><input type="text" id="security_answer" name="security_answer"></td>
+            </tr>
+            <tr>
+                <td><label for="photo">Profile Photo:</label></td>
+                <td><input type="file" id="photo" name="photo"></td>
+            </tr>
+           
+        </table>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    </center>
 </body>
 </html>
