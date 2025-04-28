@@ -18,6 +18,9 @@ h2{
     color: rgb(0, 255, 42);
 
 }
+label{
+   
+}
 
 .btn{
     display:inline-block;
@@ -40,7 +43,7 @@ h2{
 }
 *{
     text-align: center;
-    color: greenyellow; 
+    color: cyan; 
     font-weight: bolder;
 }
 #dob{
@@ -64,5 +67,12 @@ div {
     margin-right: 0px;
     margin-left: 0px;
   }
-
-
+  .error{
+ 
+    color: red;
+    font-size: 14px;
+    margin-left: 20px;
+    display: inline-block; 
+    min-width: 200px; /
+    visibility: visible; 
+  }
