@@ -12,7 +12,7 @@ function insertData($conn, $fname, $lname, $email, $pass, $phone, $uname, $gende
 {
     $sql = "INSERT INTO registration (fname,lname,email,password,phone,username,gender) VALUES ('$fname','$lname','$email','$pass','$phone','$uname','$gender')";
     if (mysqli_query($conn, $sql)) {
-        echo "Data Inserted successfully. For login click <a href='login.php'><h2>here</h2></a>.";
+        echo "Data Inserted successfully. For login click <a href='../View/login.php'>here</a>.";
     } else {
         die("Error " . mysqli_error($conn));
     }

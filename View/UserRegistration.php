@@ -83,8 +83,7 @@ include "../Control/validation.php";
      <span class="error" id="HobbyError"></span><br><br>
      <input type="file" name="files">
        <br><br> 
-       <div>This project is a car rental management system designed to help users browse, book, and manage car rentals efficiently. It includes features for customer registration, viewing available cars, making reservations, tracking bookings, and handling payments. Admins can add/edit car details, manage rentals, and monitor system activity. The goal is to provide a user-friendly, responsive interface with real-time availability updates and secure booking functionality.
-       </div>
+
        <input type="submit" class="btn submit" value="Submit"> 
        <input type="reset" class="btn reset" value="Reset">
 

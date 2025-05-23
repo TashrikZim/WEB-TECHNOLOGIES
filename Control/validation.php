@@ -84,22 +84,26 @@ include "../Model/data.php";
       } else {
           $gender = $_REQUEST["gender"];
       }
-      if($_FILES["files"]["name"]=="")
-      {
-        echo "No files Uploaded"; 
-      }
-      else{
-        if(move_uploaded_file($_FILES["files"]["name"],"../uploads/".$_FILES["files"]["name"]));
-        {
-          echo "file uploaded"."<br>";
-        } 
-      }
+if ($_FILES["files"]["name"] == "") {
+    echo "No files Uploaded"; 
+} else {
+    $target_dir = "../uploads/";
+    $target_file = $target_dir . basename($_FILES["files"]["name"]);
+
+    if (move_uploaded_file($_FILES["files"]["tmp_name"], $target_file)) {
+        echo "File uploaded successfully.<br>";
+    } else {
+        echo "Sorry, file upload failed.";
+    }
+}
+
 
           if($errorTrace==0)
     {
         $conn=createCon();
         insertData($conn,$_REQUEST["fname"],$_REQUEST["lname"],$_REQUEST["email"],$_REQUEST["pass"],$_REQUEST["phn"],$_REQUEST["uname"],$_REQUEST["gender"]);
         closeCon($conn);
+       
     }
     }
 
